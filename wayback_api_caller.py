@@ -1,5 +1,4 @@
 import sys
-from datetime import datetime
 from waybackpy import WaybackMachineCDXServerAPI
 from waybackpy.exceptions import NoCDXRecordFound
 import time
