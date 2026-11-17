@@ -16,57 +16,58 @@ pip (Python package manager)
 Internet connection
 Step 1: Clone the Repository
 Clone this repository to your local machine:
-bash
 ```
+#!/bin/bash
 git clone https://github.com/the-non-binary-tree/hq88-domain-history-checker
 ```
 Navigate to the project directory:
-bash
 ```
+#!/bin/bash
 cd <repository-directory>
 ```
 
 Step 2: Create a Virtual Environment (OPTIONAL but Recommended)
 Create a Python virtual environment:
-bash
 ```
+#!/bin/bash
 python3 -m venv venv
 ```
 Activate the virtual environment.
 Linux / macOS:
-bash
 ```
+#!/bin/bash
 source venv/bin/activate
 ```
 Windows:
-bash
+
 ```
+#!/bin/bash
 venv\Scripts\activate
 ```
 
 Step 3: Install Dependencies
 This script requires the waybackpy Python library to interact with the Wayback Machine CDX Server API.
 Install it using pip:
-bash
 ```
+#!/bin/bash
 pip install waybackpy
 ```
 Alternatively, you can install dependencies from a requirements.txt file.
 Create a file named requirements.txt containing:
-text
 ```
+#text
 waybackpy
 ```
 Then run:
-bash
 ```
+#!/bin/bash
 pip install -r requirements.txt
 ```
 
 Step 4: Verify Installation
 Verify that the dependency has been installed successfully:
-bash
 ```
+#!/bin/bash
 pip show waybackpy
 ```
 You are now ready to run the script.
@@ -74,20 +75,22 @@ You are now ready to run the script.
 2. Usage
 Basic Usage
 Run the script with a target domain as a command-line argument:
-bash
 ```
+#!/bin/bash
 python3 wayback_api_caller.py example.com
 ```
 Run Without Arguments
 If no domain is provided, the script automatically uses example.com as the default target:
 bash
 ```
+#!/bin/bash
 python3 wayback_api_caller.py
 ```
 Example
 Run the script against a target domain:
 bash
 ```
+#!/bin/bash
 python3 wayback_api_caller.py google.com
 ```
 Example output:
