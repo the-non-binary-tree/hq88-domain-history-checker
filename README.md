@@ -2,11 +2,14 @@
 Domain history checker. Checks the oldest and newest timestamps of archived captures and the total number of archived captures for a domain.
 
 A Python 3 script that retrieves historical archive information for a given domain using the Internet Archive Wayback Machine.
+
 The script uses the Wayback Machine CDX Server API to retrieve the following information:
+
 Oldest Capture: The date of the earliest archived snapshot of a domain.
 Newest Capture: The date of the most recent archived snapshot of a domain.
 Total Captures: The total number of archived snapshots available for the domain.
 Execution Time: The time required to process the domain.
+
 1. Installation
 Requirements
 Make sure the following requirements are installed on your system:
@@ -110,12 +113,17 @@ Command-Line Arguments
 
 
 Functions Overview
+
 The script consists of three main functions:
+
 Function	Description
+
 `get_oldest_capture(domain)`:	Retrieves the oldest archived snapshot date.
 `get_newest_capture(domain)`:	Retrieves the newest archived snapshot date.
 `get_capture_count(domain)`:	Counts the total number of archived snapshots.
+
 Execution Time
+
 The script uses Python's time.perf_counter() to measure the total execution time.
 The execution time includes all three Wayback Machine queries:
 Retrieving the oldest capture.
@@ -124,11 +132,14 @@ Counting all available snapshots.
 The result is displayed in seconds with six decimal places.
 
 Notes and Limitations
+
 The script requires an active internet connection.
 Results depend on the availability of the Internet Archive Wayback Machine CDX Server.
 Some domains may not have any archived snapshots.
 The total capture count may take longer for domains with a large archive history because the script iterates through all available snapshots.
 Network latency and API response time may affect overall execution time.
 The script currently handles NoCDXRecordFound exceptions when retrieving the oldest and newest captures. Other network or API errors may still cause execution to fail.
+
 License
+
 This project is provided for research and educational purposes.
