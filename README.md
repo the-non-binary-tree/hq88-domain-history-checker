@@ -6,8 +6,11 @@ A Python 3 script that retrieves historical archive information for a given doma
 The script uses the Wayback Machine CDX Server API to retrieve the following information:
 
 Oldest Capture: The date of the earliest archived snapshot of a domain.
+
 Newest Capture: The date of the most recent archived snapshot of a domain.
+
 Total Captures: The total number of archived snapshots available for the domain.
+
 Execution Time: The time required to process the domain.
 
 1. Installation
