@@ -30,7 +30,7 @@ git clone https://github.com/the-non-binary-tree/hq88-domain-history-checker
 Navigate to the project directory:
 ```
 #!/bin/bash
-cd <repository-directory>
+cd  hq88-domain-history-checker
 ```
 
 ### Step 2: Create a Virtual Environment (OPTIONAL but Recommended)
