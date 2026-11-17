@@ -107,6 +107,8 @@ Command-Line Arguments
 | Argument	| Required |	Description
 | --- | --- | --- |
 | domain	| No	| The domain to query. Defaults to example.com if omitted.|
+
+
 Functions Overview
 The script consists of three main functions:
 Function	Description
